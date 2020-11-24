@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首頁</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<style>
+		#profile table{
+			border: 5px solid #000000;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('.parallax').parallax();
+		});
+		document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.scrollspy');			
+			var instances = M.ScrollSpy.init(elems, {"scrollOffset": 50});
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper grey darken-3 scrollspy" id = "top">
+			<a class="brand-logo">首頁</a>
+			<ul id="nav-mobile" class="right">
+				<li><a href = "#profile">Profile</a></li>
+				<li><a href = "#collegeWorks">College Works</a></li>
+				<li><a href = "#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+
+	<div class = "parallax-container">
+		<div class = "parallax">
+			<!-- Photographer: Three-shots, From Pexels: https://www.pexels.com/zh-tw/photo/714525/ -->
+			<img src = "images/pexels-threeshots-714525.jpg">
+			<!-- Photographer: Three-shots, From Pexels: https://www.pexels.com/zh-tw/photo/714525/ -->
+		</div>
+	</div>
+	<a class="waves-effect waves-light btn right grey darken-3" href="https://www.pexels.com/zh-tw/photo/714525/" target = "_blank">Image Source</a>
+
+	<div class="section grey lighten-3 scrollspy" id = "profile">
+		<div class="row container">
+			<h3 class="header">Profile</h3>
+			<div class = "row">
+				<div class = "col s4 offset-s4">
+					<table>
+						<tbody>
+							<tr><th colspan = "2">Information</th></tr>
+							<tr><th>姓名</th><td>曾桓毅</td></tr>
+							<tr><th>生日</th><td>1997/09/29</td>	</tr>
+							<tr><th>擅長語言</th><td>Java、C</td></tr>
+						</tbody>					
+					</table>
+				</div>
+				<div class = "col s4">
+					<table>
+						<tbody>
+							<tr><th colspan = "2">Education</th></tr>
+							<tr><th>大學</th><td>國立中興大學資訊科學與工程學系</td></tr>
+							<tr><th>高中</th><td>高雄市立中山高中</td></tr>
+							<tr><th>國中</th><td>高雄市立福山國中</td></tr>
+						</tbody>					
+					</table>
+				</div>
+			</div>
+			<div class = "right-align"><h6><u><a href = "#top" class = "black-text">Top</a></u></h6></div>
+		</div>
+	</div>
+
+	<div class="section grey lighten-5 scrollspy" id = "collegeWorks">
+		<div class="row container">
+			<h3 class="header">College Works</h3>
+			<div class = "row">
+				<div class = "col s6">
+					<div class = "card">
+						<div class = "card-image">
+							<img src = "images/collegeWorks/simpleAccountingSystem.jpg">
+						</div>
+						<div class = "card-content">
+							<p><b>Simple Accounting System</b></p>
+						</div>
+						<div class = "card-action">
+							<a href = "https://github.com/sstom0929/simple-accounting-system" target="_blank"><b>github</b></a>
+						</div>
+					</div>
+				</div>
+				<div class = "col s6">
+					<div class = "card">
+						<div class = "card-image">
+							<img src = "images/collegeWorks/blogManagementSystem.jpg">
+						</div>
+						<div class = "card-content">
+							<p><b>Blog Management System</b></p>
+						</div>
+						<div class = "card-action">
+							<a href = "https://github.com/sstom0929/blog-managemant-system" target="_blank"><b>github</b></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "right-align"><h6><u><a href = "#top" class = "black-text">Top</a></u></h6></div>
+		</div>
+	</div>
+
+	<div class="section grey lighten-3 scrollspy" id = "contact">
+		<div class="row container">
+			<h3 class="header">Contact</h3>
+			<div class = "row">
+				<div class = "col s6 offset-s6">
+					<table class = "white-text grey darken-3">
+						<tbody>
+							<tr><th>手機</th><td>0929-054-300</td></tr>
+							<tr><th>Email</th><td>tom09296848@gmail.com</td></tr>
+						</tbody>					
+					</table>
+				</div>
+			</div>
+			<div class = "right-align"><h6><u><a href = "#top" class = "black-text">Top</a></u></h6></div>
+		</div>
+	</div>
+
+	<footer class="page-footer grey darken-2">
+		<div class="footer-copyright grey darken-3">
+			<div>Copyright © 2020 Huan-Yi. All rights reserved.</div>
+		</div>
+	</footer>
+</body>
+</html>
